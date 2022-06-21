@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="header"> DJSON</div>
+
+        <div class="controls">
+            <button type="button" id="btnFormat" class="controls__button controls__button--format">Format</button>
+            <button type="button" id="btnMinify" class="controls__button controls__button--minify">Minify</button>
+        </div>
+
+        <div class="container">
+            <textarea id="inputArea" class="large-area" placeholder="Enter your JSON here...">{"app": "djson", "features": ["format json", "minify json", "click to copy"]}</textarea>
+            <textarea id="outputArea" readonly class="large-area" placeholder="Your formated JSON will appear here..."></textarea>
+            <div id="snackbar">Formated JSON copied to clipboard...</div>
+        </div>
+    </body>
+</html>  
