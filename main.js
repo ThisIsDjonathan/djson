@@ -24,6 +24,10 @@ btnMinify.addEventListener("click", () => {
   }
 });
 
+inputArea.addEventListener("click", () => {
+  inputArea.innerHTML = "";
+})
+
 outputArea.addEventListener("click", () => {
   navigator.clipboard.writeText(outputArea.value).then(function() {
     if(outputArea.value != "" && document.activeElement == outputArea) {
